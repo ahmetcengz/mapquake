@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 import { Popup as LeafletPopup } from "react-leaflet";
 
 const Popup = ({ earthquake }) => {
-  const { created, depth, mag, title } = earthquake || {};
+  const { created, date, depth, mag, title } = earthquake || {};
 
   const formattedDate = dayjs(created).format("dddd, MM/YYYY HH:MM") || date;
 
