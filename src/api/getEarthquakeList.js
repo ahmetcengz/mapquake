@@ -2,7 +2,7 @@ import axios from "axios";
 
 const getEarthquakeList = async () => {
   try {
-    const { data } = await axios.get(process.env.REACT_APP_API_URI);
+    const { data } = await axios.get("https://api.orhanaydogdu.com.tr/deprem/kandilli/live");
 
     if (data?.status) {
       return data?.result;

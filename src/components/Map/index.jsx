@@ -22,7 +22,7 @@ const Map = () => {
         className="map__map_container"
         center={TURKEY_CENTER}
       >
-        <TileLayer url={process.env.REACT_APP_TILE_URL} />
+        <TileLayer url={"https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=529BlBJJfeFAraNbX1NV"} />
         <MarkerList earthquakeList={response.data} />
       </MapContainer>
     </div>
